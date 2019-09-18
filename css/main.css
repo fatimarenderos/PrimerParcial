@@ -21,7 +21,8 @@ body {
 
 .header {
     display: flex; /* Se le coloca flex para que las sections/div/navs que esten contenidas se les pueda aplicar dichas caracteriasticas que otorga flex */
-    justify-content: space-between
+    justify-content: space-between;
+    margin: 0em 6em;
 }
 
 .src-only {
@@ -39,7 +40,6 @@ p{
 }
 
 .logo {
-    
     margin: 1em;
     width: 10em;
 }
@@ -68,19 +68,18 @@ margin-bottom:4em;
 /*----------------------------------------------------------------------------*/
 /* Big area */
 .big-hero img {
-    width: 260px;
-
+    width: 16em;
 }
 
 .big-hero h2 {
-    font-size: 1.875em;
+    font-size: 3em;
     font-weight: 700;
     letter-spacing: 0.002em;
     margin-top: 1em ;
 }
 
 .big-hero p {
-    font-size: 0.7em;;
+    font-size: 1em;
     color: #D7DEE6;
 
 }
@@ -92,7 +91,7 @@ margin-bottom:4em;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-bottom: 1em;
+    margin-bottom: 3em;
 
 }
 
@@ -132,6 +131,7 @@ div.hh li a {
     color: #0AC693;
     font-size: 2.7em;
     margin: 4em;
+    
 }
 /*   -------------------------------------------------------------------   */
 .green-area {
@@ -170,9 +170,10 @@ div.hh li a {
     background-color: #ffffff;
     text-align: left;
     padding-bottom: 2em;
-    width: 18em;
+    width: 25em;
+    margin: 0 2.5em;
     justify-content: space-around;
-    height: 25em;
+    height: 30em;
     
 }
 
@@ -183,10 +184,11 @@ div.hh li a {
 }
 
 .post article h3 {
-    color: #0D5061;
+    color: #193847;
+    font-weight: bold;
     margin-top: 2em;
     padding: 0em 1rem;
-    font-size: 0.9em;
+    font-size: 1.1em;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -202,6 +204,7 @@ div.hh li a {
 /* About */
 
 .about{
+    padding: 0px 8em;
     margin-top: 2em;
 }
 
@@ -218,10 +221,13 @@ div.container2{
 }
 
 div.contact{
+    margin-left: 4em;
+
 width: 100%;
 }
 div.bio-info{
     width: 100%;
+    margin-right: 4em;
 }
 /*-----------------------------------------------------*/
 .about h2 {
@@ -232,12 +238,11 @@ div.bio-info{
 }
 
 .bio-info img{
-   width: 350px;
-
+    width: 17em;
 }
 
 .bio-info p{
-    font-size: 16px;
+    font-size: 10px;
     padding: 2em;
     text-align: left;
     line-height: 25px;
@@ -336,9 +341,22 @@ footer .social-links {
     
 }
 
+
+
+
+@media only screen and (min-width: 1780px) {
+
+
+    
+
+
+    
+
+}
+
 /* Pesonalizando estilo para tablets*/
 @media only screen and (min-width: 768px) {
-  
+   
     .post ul {
         list-style: none;
         display: flex;
@@ -378,10 +396,20 @@ footer .social-links {
     }
 
 
-
+    div.container2{
+            
+        display:flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-flow: wrap;
+        
+    }
 
     /*TODO: FALTA CSS */
 } 
+
+
+
 
 @media only screen and (min-width: 1024px) {
 
@@ -391,12 +419,121 @@ footer .social-links {
 
 }
 
+
+
+
+@media only screen and (min-width: 414px) {
+
+    /*TODO: FALTA CSS */
+    div.container2{
+            
+        display:flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-flow: wrap;
+        
+    }
+
+    
+
+    div.contact {
+        width: 80%;
+        margin-left: 0;
+    }
+
+    .post ul li article {
+        overflow: hidden;
+        border-radius: 10px;
+        background-color: #ffffff;
+        text-align: left;
+        padding-bottom: 2em;
+        width: 19em;
+        margin: 0 2.5em;
+        justify-content: space-around;
+        height: 25em;
+    }
+
+    .big-hero img {
+        width: 11em;
+    }
+
+
+    .big-hero h2 {
+        font-size: 2em;
+        font-weight: 700;
+        letter-spacing: 0.002em;
+        margin-top: 1em;
+    }
+
+
+
+    
+.logo {
+    margin: 1em;
+    margin-left: -3em;
+    width: 7em;
+}
+
+
+.fa-bars:before {
+    content: "\f0c9";
+    margin-right: -5.5em;
+}
+
+.about{
+    padding: 0;
+    margin-top: 2em;
+}
+
+
+div.bio-info {
+    width: 80%;
+    margin-right: 0;
+
+}
+
+.bio-info img {
+    width: 13em;
+    margin-bottom: 1em;
+}
+
+
+.contact-form input[type=submit] {
+    background-color: #F74442;
+    font-weight: 400;
+    color: white;
+    width: 100%;
+    font-size: 1rem;
+    margin-bottom: 4em;
+}
+
+.bio-info p {
+    font-size: 10px;
+    padding: 2em;
+    text-align: left;
+    line-height: 25px;
+    margin-bottom: 2em;
+    letter-spacing: 2px;
+}
+
+}
+
 @media only screen and (min-width: 1440px) {
 
     /*TODO: FALTA CSS */
+
     .container {
         width: 80%;
         margin: 0 auto;
         max-width: 1440px;
     }
-}
+        /*-----------------------------------*/
+        div.container2{
+            
+            display:flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-flow: wrap;
+            
+        }
+    }
