@@ -19,6 +19,16 @@ body {
     font-weight: 400;
 }
 
+
+
+
+.container2{
+    display: flex;
+    flex-direction: row ;
+    justify-content: space-around;
+    
+}
+
 .header {
     display: flex; /* Se le coloca flex para que las sections/div/navs que esten contenidas se les pueda aplicar dichas caracteriasticas que otorga flex */
     justify-content: space-between;
@@ -44,6 +54,7 @@ p{
     width: 10em;
 }
 
+/*Lasopciones de adecuan continuamente */
 .options {
     color: inherit;
     text-decoration: none;
@@ -113,7 +124,7 @@ margin-bottom:4em;
 div.hh li a {
     color:red;
 }
-
+/* Dandole tamaño a los logos */
 .fab.fa-github{
     font-size: 15em;
     margin-right: 0.5em;
@@ -152,13 +163,15 @@ div.hh li a {
     margin: 1em;
 }
 
+
+/*Dandole formato al are de los articulos */
 .post ul {
     list-style: none;
 }
 
 .post ul li {
     min-height: 300px;
-    max-width: 350px;
+    max-width: 3500px;
     margin: 4rem auto;
     justify-content: space-around;
     }
@@ -171,7 +184,9 @@ div.hh li a {
     text-align: left;
     padding-bottom: 2em;
     width: 25em;
-    margin: 0 2.5em;
+    margin: 0;
+    margin-left: 2.5em;
+    margin-right: 2.5em;
     justify-content: space-around;
     height: 30em;
     
@@ -211,15 +226,7 @@ div.hh li a {
 
 /*-----------------------------------------------------*/
 
-
-div.container2{
-    display : inline-flex;
-    display:flex;
-    flex-direction: row;
-    justify-content: space-around;
-    
-}
-
+/* Dandole formato al area de contacto*/
 div.contact{
     margin-left: 4em;
 
@@ -342,89 +349,12 @@ footer .social-links {
 }
 
 
+/*Dandole formato para iphone 6-7-8 plus */
 
 
-@media only screen and (min-width: 1780px) {
+  @media only screen and (min-width: 414px) {
 
-
-    
-
-
-    
-
-}
-
-/* Pesonalizando estilo para tablets*/
-@media only screen and (min-width: 768px) {
-   
-    .post ul {
-        list-style: none;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    
-    .post ul li {
-        min-height: 350px;
-        max-height: 3500px;
-        margin: 1rem 2rem;
-        flex: 1 0 300px;
-    }
-
-
-    .logo {
-        width: 150px;
-        margin: 1.5em;
-    }
-
-    .show-desktop {
-        display: block;
-    }
-
-    .hide-desktop {
-        display: none;
-    }
-
-    .menu {
-        background-color: #193847; 
-        position: static;
-        z-index: 20;
-        width: auto;
-        height:auto;
-        display: flex;
-        margin-top: 1em;
-    }
-
-
-    div.container2{
-            
-        display:flex;
-        flex-direction: row;
-        justify-content: space-around;
-        flex-flow: wrap;
-        
-    }
-
-    /*TODO: FALTA CSS */
-} 
-
-
-
-
-@media only screen and (min-width: 1024px) {
-
-       /*TODO: FALTA CSS */
-
-
-
-}
-
-
-
-
-@media only screen and (min-width: 414px) {
-
-    /*TODO: FALTA CSS */
+   /*Dandole formato al contenedor*/
     div.container2{
             
         display:flex;
@@ -497,7 +427,7 @@ div.bio-info {
     margin-bottom: 1em;
 }
 
-
+/* Dandole formato al boton de contacto*/
 .contact-form input[type=submit] {
     background-color: #F74442;
     font-weight: 400;
@@ -518,22 +448,169 @@ div.bio-info {
 
 }
 
-@media only screen and (min-width: 1440px) {
+/* Pesonalizando estilo para tablets*/
+@media only screen and (min-width: 768px) {
 
-    /*TODO: FALTA CSS */
+    /* Dandole formato al listado */
 
+    .post ul {
+        list-style: none;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .post ul li {
+        min-height: 350px;
+        max-height: 3500px;
+        flex: 1 0 300px;
+    }
+
+
+    .logo {
+        width: 150px;
+        margin: 1.5em;
+    }
+
+    .show-desktop {
+        display: block;
+    }
+
+    .hide-desktop {
+        display: none;
+    }
+
+    /*Dandole formato al menu */
+    .menu {
+        background-color: #193847; 
+        position: static;
+        z-index: 20;
+        width: auto;
+        height:auto;
+        display: flex;
+        font-size: 0.6em;
+        margin-top: 1em;
+    }
+
+
+    div.container2{
+            
+        display:flex;
+        justify-content: space-around;
+        
+    }
+
+    /*Dandole formato a los elementos del green area */
+
+        .post ul li article {
+            overflow: hidden;
+            border-radius: 10px;
+            background-color: #ffffff;
+            text-align: left;
+            padding-bottom: 2em;
+            width: 16em;
+            margin: 0px 9.5em;
+            justify-content: space-around;
+            height: 19em;
+        }
+    
+} 
+
+
+
+
+/* Para ipad pro*/
+@media only screen and (min-width: 1024px) {
+
+    /*Dandole formato al menu principal */
+    .menu {
+     background-color: #193847;
+     position: static;
+     z-index: 20;
+     width: 100%;
+     height: auto;
+     display: flex;
+     margin-top: 1em;
+     font-size: 11px;
+ }
+
+ div.container2{
+
+display: flex;
+flex-flow: row;
+
+ }
+
+ div.bio-info {
+    width: 80%;
+    padding: 2em;
+    margin-right: 0;
+
+    
+}
+/*Arreglando medida de el area de contacto */
+
+div.contact {
+    width: 80%;
+    padding: 2em;
+
+    margin-left: 0;
+}
+ .post ul li {
+    min-height: 300px;
+    max-width: 24em;
+    margin-bottom: 7em;
+    justify-content: space-around;
+}
+
+.post ul {
+    display: flex;
+    list-style: none;
+    flex-flow: row;
+margin-bottom: 2em;
+    justify-content: center;
+}
+
+
+ .post ul li article {
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: #ffffff;
+    text-align: left;
+    padding-bottom: 2em;
+    width: 11em;
+    margin: 0 0.5em;
+    justify-content: space-around;
+    height: 21em;
+ }
+
+
+
+
+}
+
+
+/* Dandole formato a monitores 1440*/
+
+
+
+
+  @media only screen and (min-width: 1440px) {
     .container {
         width: 80%;
         margin: 0 auto;
         max-width: 1440px;
     }
-        /*-----------------------------------*/
-        div.container2{
-            
-            display:flex;
-            flex-direction: row;
-            justify-content: space-around;
-            flex-flow: wrap;
-            
-        }
+
+/* Dandole formato el area del form */
+    .contact-form {
+        display: flex;
+        width: 90%;
+        /* margin: 84%; */
+        flex-direction: column;
     }
+  }
+    
+
+
+
+
